@@ -1,5 +1,6 @@
-const express = require("express");
 
+import express from 'express';
+import mysql from 'mysql2';
 const app = express();
 
 app.get('/', (req, res) => {

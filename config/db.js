@@ -21,4 +21,20 @@ db.connect((err) => {
     }
 });
 
+const createUserTable = `
+CREATE TABLE IF NOT EXISTS User (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    created AT DATETIME DEFAULT CURRENT_TIMESTAMP
+);`;
+
+
+//For transferring table on your database host/domain
+db.query(createUserTable, (err) => {
+    if (err) console.error("Table User Error!", err);
+    else console.log('User Table Create Successfully')
+})
+
 export default db;
