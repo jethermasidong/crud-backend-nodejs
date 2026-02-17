@@ -2,6 +2,11 @@ PROJECT
 CREATING CRUD FUNCTION ON BACKEND USING NODE.JS
 
 
+NOTES: 
+*Use ES Module Syntax
+*export default - import function from '';
+*export const function - import {create} from;
+
 STEP 1:
 CREATE YOUR PROJECT FILE
 

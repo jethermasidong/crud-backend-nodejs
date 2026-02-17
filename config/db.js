@@ -22,7 +22,7 @@ db.connect((err) => {
 });
 
 const createUserTable = `
-CREATE TABLE IF NOT EXISTS User (
+CREATE TABLE IF NOT EXISTS Users (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
     email VARCHAR(255) NOT NULL,
