@@ -38,6 +38,7 @@ export const update = async (req, res) => {
     });
 };
 
+
 //DELETE LOGIC
 export const deletes = async (req, res) => {
     crud.deletes(req.params.id, (err, user) => {

@@ -12,10 +12,10 @@ const update = async(id, updateData, callback) => {
     db.query('UPDATE users SET ? WHERE id = ?', [updateData, id], callback);
 };
 
-const deleted = async(id, callback) => {
+const deletes = async(id, callback) => {
     db.query('DELETE FROM users WHERE id = ?', [id], callback);
 };
 
 
 
-export default {create, read, update, deleted};
+export default {create, read, update, deletes};
